@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Tailwind v4 uses the @theme directive directly in CSS instead of a config file */
+@theme {
+  --color-charcoal: #050505;
+  --radius-card: 12px;
+  --tracking-tightest: -0.02em;
+  --background-image-card-gradient: linear-gradient(to bottom, #18181b, #09090b);
+}
+
+body {
+  background-color: var(--color-charcoal, #050505);
+  color: var(--color-zinc-100, #f4f4f5);
+}
+
+/* Ensure smooth scrolling for the dashboard */
+html {
+  scroll-behavior: smooth;
+}
