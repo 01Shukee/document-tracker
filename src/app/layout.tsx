@@ -5,14 +5,14 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], display: 'swap' });
 
 export const metadata: Metadata = {
-  title: "DocuTrack | Auth",
+  title: "DocuTrack | FUTO",
   description: "Secure Document Dispatch",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${inter.className} antialiased bg-charcoal text-zinc-100 min-h-screen`}>
+    <html lang="en" className="dark scroll-smooth">
+      <body className={`${inter.className} antialiased bg-[#0C0D0E] text-zinc-100 min-h-screen`}>
         {children}
       </body>
     </html>

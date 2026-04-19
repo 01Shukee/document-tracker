@@ -35,7 +35,8 @@ export default function DashboardLayout({
         
         <Sidebar />
         
-        <main className="ml-16 w-full p-8 transition-all duration-300">
+        {/* MOBILE FIX: flex-1 takes exact remaining space, p-4 on mobile to save screen real estate, md:p-8 for big desktop screens, and overflow-x-hidden stops horizontal scrolling. */}
+        <main className="flex-1 ml-16 p-4 md:p-8 transition-all duration-300 overflow-x-hidden">
           <div className="max-w-7xl mx-auto">
             {children}
           </div>
